@@ -13,6 +13,6 @@ public class ExecutableClass implements Start {		//using method from the interfa
 		int choice = scanner.nextInt();
 		DayChoice dayChoice = new DayChoice(choice);	// Creating Object of DayChoice and passing the variable to the constructor to initialize its value
 		dayChoice.start();		// Calling start method
-		scanner.close();
+		scanner.close();		//closing the object for Scanner Class
 	}
 }

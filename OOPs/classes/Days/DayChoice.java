@@ -15,7 +15,8 @@ public class DayChoice implements Start{
 	
 	@Override
 	public void start() {		// Overriding the start Method of Start Interface
-		System.out.print("Enter Question you want to see: \n Day One Consists of 4 Questions ");
+		System.out.println("Enter Question you want to see: \n Day One Consists of 4 Questions, so options are 1-4 \n Day Two consists of "
+				+ "10 Questions, so options are 1-10: ");
 		int question = scanner.nextInt();		//Taking input for Question number you want to Access
 		switch (choice) {
 			case 1:
@@ -23,9 +24,12 @@ public class DayChoice implements Start{
 				day1.start();		//Calling start method of Day1 class
 				break;
 			case 2:
-				Day2 day2 = new Day2(question);		//
-				day2.start();
+				Day2 day2 = new Day2(question);		//Passing value to the Constructor
+				day2.start();		//Calling start method of Day2 class
 				break;
+			default:
+				System.out.print("You entered a Wrong choice!");		//default case
+				
 		}
 	}
 }
