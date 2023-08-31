@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import classes.Days.Day1.Day1;
 import classes.Days.Day2.Day2;
+import classes.Days.Day3.Day3;
 import interfaces.Start;
 
 public class DayChoice implements Start{
@@ -27,8 +28,13 @@ public class DayChoice implements Start{
 				Day2 day2 = new Day2(question);		//Passing value to the Constructor
 				day2.start();		//Calling start method of Day2 class
 				break;
+			case 3:
+				Day3 day3 = new Day3(question);
+				day3.start();
+				break;
 			default:
-				System.out.print("You entered a Wrong choice!");		//default case
+				System.out.print("You entered a Wrong choice!");
+				break; //default case
 				
 		}
 	}
